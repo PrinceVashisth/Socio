@@ -16,6 +16,8 @@ import {
 import { useContext, useState } from "react";
 import { theme } from "../../../theme/ThemeProvider";
 import Link from "next/link";
+import Settings from "../settings/Settings";
+import Notification from "../notification/Notification";
 
 export default function Navbar() {
   const [focus, setFocus] = useState({ name: "Home" });
@@ -58,7 +60,7 @@ export default function Navbar() {
             }
           >
             <Link href="/videos">
-              {" "}
+              
               <ElectricBolt
                 sx={
                   focus.name === "Shorts"
@@ -76,7 +78,7 @@ export default function Navbar() {
             style={focus.name === "Video" ? { backgroundColor: "#d2e3ff" } : {}}
           >
             <Link href="/stories">
-              {" "}
+              
               <VideocamOutlined
               sx={
                 focus.name === "Video"
@@ -96,7 +98,7 @@ export default function Navbar() {
             }
           >
             <Link href="/groups">
-              {" "}
+              
               <Groups
                 sx={
                   focus.name === "Groups"
@@ -114,14 +116,14 @@ export default function Navbar() {
             style={focus.name === "Store" ? { backgroundColor: "#d2e3ff" } : {}}
           >
             <Link href="/store">
-              {" "}
+              
               <Storefront
                 sx={
                   focus.name === "Store"
                     ? { color: "blue", fontSize: {xs:"20px",sm:"30px"} }
                     : { color: "blue", fontSize: {xs:"15px",sm:"30px"}, color: "gray" }
                 }
-              />{" "}
+              />
             </Link>
           </div>
         </div>
@@ -142,15 +144,15 @@ export default function Navbar() {
             ChatToggle();
           }}
         >
-          {" "}
-          <CommentOutlined sx={{  color: "#05f", fontSize:{xs:"25px",sm:"30px"} }} />{" "}
+          
+          <CommentOutlined sx={{  color: "#05f", fontSize:{xs:"25px",sm:"30px"} }} />
         </div>
         <div className={styles.otherLink}>
-          {" "}
+          
           <SettingsOutlined
             sx={{  color: "#05f",fontSize:{xs:"25px",sm:"30px"}  }}
             className={styles.setting}
-          />{" "}
+          />
         </div>
         <div
           className={styles.otherLink}
@@ -167,6 +169,8 @@ export default function Navbar() {
           />
         </div>
       </div>
+     <Settings/>
+     <Notification/>
     </div>
   );
 }
