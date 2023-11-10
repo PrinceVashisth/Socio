@@ -1,0 +1,226 @@
+.container{
+    flex: 3;
+    background-color: var(--bg);
+    height: calc(100vh - 100px);
+    overflow-y: scroll;
+    padding-bottom: 10px;
+}
+
+.container::-webkit-scrollbar{
+    width: 0;
+}
+
+.FriendRequest,.ConfirmFriends{
+    background-color: #fff;
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 300px;
+    /* height: 500px; */
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.FriendRequestHeader{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    border-bottom: 1px solid black;
+}
+
+.ConfirmFriendHeader{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+#title{
+  font-weight: 600;
+  font-size: 14px;
+}
+
+#btn{
+    color: blue;
+    font-weight: 800;
+    font-size: 14px;
+
+}
+
+.friendList{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    list-style-type: none;
+    margin-top: 20px;
+}
+
+.confirmFriendList{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    list-style-type: none;
+}
+
+.FriendListItem{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.confirmFriendListItem{
+    background-color: lightgrey;
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+
+.ConfirmFriendBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin-left: auto;
+}
+
+.FriendListHeader{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.FriendListItemImg{
+    border-radius: 50%;
+}
+
+.FriendListItemContent{
+    display: flex;
+    flex-direction: column;
+}
+
+.FriendListItemBtns{
+    display: flex;
+    gap: 10px;
+}
+
+.FriendListItemBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    font-weight: 600;    
+}
+
+.btnAdd{
+    color: white;
+    background-color: #1e74fd;
+    background-image:linear-gradient(135deg,#05f,var#09f);
+}
+.btnRemove{
+    background-color: #eee;
+}
+
+#owner{
+   font-size: 16px; 
+}
+
+#mutual{
+font-size: 13px;
+color: gray;
+}
+
+.GroupFooter{
+    display: flex;
+    gap: 10px;
+   align-items: center;
+}
+
+.imgs{
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 110px;
+    height: 50px;
+}
+
+.Img{
+    width: 30px;
+    height: 30px;
+    background-color: #05f;
+    border-radius: 50%;
+    position: absolute;
+    border: 1px solid gray;
+}
+
+.GroupFooterContent{
+    color: gray;
+    font-weight: 600;
+}
+
+.SuggestContainer{
+margin-top: 20px;
+}
+
+.LikeBtn{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 20px;
+    background-color: rgb(168, 163, 163);
+    padding: 10px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.EventList{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style-type: none;
+}
+
+.EventListItem{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.EventListItemLeft{
+    width: 100px;
+    height: 100px;
+    background-color: #05f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+    border-radius: 20px;
+}
+
+.Heading{
+    font-weight: 600;
+}
+
+.EventContent{
+    color: Gray;
+}
+
+@media screen and (max-width:1230px){
+    .container{
+        position: absolute;
+        top: 100px;
+        right: -600px;
+    }
+}

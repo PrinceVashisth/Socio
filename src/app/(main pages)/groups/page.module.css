@@ -1,0 +1,26 @@
+.container{
+    display: flex;
+    background-color: var(--bg);
+}
+
+.Wrapper{
+    flex: 9;
+    height: calc(100vh - 100px);
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+@media screen and (max-width:900px) {
+    .Wrapper{
+        padding-bottom: 60px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .Wrapper{
+        height: calc(100vh - 50px);
+    }
+}

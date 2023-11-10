@@ -1,0 +1,94 @@
+.container{
+    transition: all ease 0.5s;
+    position: absolute;
+    right: 300px;
+    bottom: 10px;
+    width: 300px;
+    height: 400px;
+    background-color: #fff;
+}
+
+.Header{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.Img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.name{
+    color: #3f3f67;
+    font-weight: 600;
+}
+
+.active{
+    color: rgb(176, 173, 173);
+}
+
+.cancel{
+    margin-left: auto;
+}
+
+.MessageBox{
+    width: 100%;
+    height: 260px;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    scroll-behavior: smooth;
+}
+.MessageBox::-webkit-scrollbar{
+    width: 0px;
+}
+
+.Message{
+  width: fit-content;
+  margin: 8px 15px;
+  padding: 8px;
+  background-color: blue;
+  border-radius: 10px 10px 10px 0px;
+  color: #fff;
+}
+
+.myself{
+    margin-left: auto;
+    border-radius: 10px 10px 0px 10px;
+}
+
+.MessageInput{
+    width: 100%;
+    padding: 8px;
+}
+
+.mytime{
+    float: right;
+}
+
+.input{
+    height: 50px;
+    background-color: rgb(230 225 225 / 52%);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.msg{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: #707070;
+    font-size: 17px;
+    font-weight: 500;
+}
+

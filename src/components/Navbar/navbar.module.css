@@ -1,0 +1,240 @@
+.wrapper{
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    height: 100px;
+    background-color: var(white);
+}
+
+.logo{
+    flex: 2;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-width: 300px;
+}
+
+.heading{
+    font-size: 30px;
+     color: rgba(36, 36, 159, 0.856);
+     font-weight: 900;
+}
+
+.pages{
+    flex: 5.5;
+    display: flex;
+    gap: 20px;
+   align-items: center;
+}
+
+.inputs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 330px;
+    background-color: #fff;
+    height: 50px;
+    border-radius: 30px;
+    background-color:#ededed;
+}
+
+.input{
+    border: none;
+    width: 80%;
+    height: 90%;
+    outline: none;
+    font-size: 16px;
+    background-color: inherit;
+}
+
+.otherlinks{
+    flex: 4.5;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+}
+
+.links{
+    display: flex;
+    gap: 20px;
+}
+
+.link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: lightgray;
+    border-radius: 50%;
+}
+
+.setting {
+    transform: translate(-50%, -50%);
+    animation: rotate 2s linear infinite;
+  }
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+.otherLink{
+   position: relative;
+  }
+  
+ .otherLink>.css-8w71ys-MuiSvgIcon-root {
+    font-size: 50px;
+}
+
+  .dot{
+    width: 8px;
+    height: 8px;
+    background-color: orange;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+  }
+
+.card{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background-color: aqua;
+    z-index: 500;
+}
+
+.profileImg{
+  border-radius: 50%;
+}
+
+@media screen and (max-width:1230px){
+    .HambergerMenu{
+      position: relative;
+      width: 20px;
+      height: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      background-color: #fff;
+      margin-right: 10px;
+    }
+    .line{
+      width: 100%;
+      height: 3px;
+      background-color: black;
+    }
+    .links{
+      position: absolute;
+      top: 100px;
+      right: -100px;
+      flex-direction: column;
+      z-index: 3;
+      height: calc(100vh - 100px);
+      justify-content: space-between;
+      padding: 10px;
+      background-color: var(--bg);
+    }
+    .otherlinks{
+      flex: 1.5;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 20px;
+  }
+
+  .inputs{
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    width: 95%;
+    background-color: #fff;
+    height: 50px;
+    border-radius: 30px;
+    background-color:#ededed;
+}
+
+.input{
+    border: none;
+    width: 80%;
+    height: 90%;
+    outline: none;
+    font-size: 16px;
+    background-color: inherit;
+    margin-left: 30px;
+}
+  
+}
+
+@media screen and (max-width:900px) {
+
+.logo{
+    flex: none;
+    min-width: 0px;
+}
+
+.heading{
+display: none;
+}
+
+.HambergerMenu{
+  display: none;
+}
+
+
+  .links{
+    position: absolute;
+    width: 100vw;
+    bottom: 0px;
+    left: 0px;
+    flex-direction: row;
+    top: auto;
+    display: flex;
+    background-color: #ffffff;
+    height: fit-content;
+    z-index: 9;
+    justify-content: space-around;
+    padding: 10px 0;
+  }
+  .link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: lightgray;
+    border-radius: 10px; 
+  }
+}
+
+@media screen and (max-width:600px) {
+  .wrapper{
+    height: 50px;
+}
+
+  .inputs{
+    position: absolute;
+    width: 100%;
+    top: -50px;
+    left: 0px;
+    height: 50px;
+    background-color: #fefbfb;
+    z-index: 10;
+    border-radius: 0;
+  }
+
+  .links{
+    bottom: 0px;
+    padding: 5px;
+  }
+  .link{
+    width: 30px;
+    height: 30px;
+    border-radius: 10px; 
+  }
+}

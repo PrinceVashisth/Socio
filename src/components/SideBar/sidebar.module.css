@@ -1,0 +1,134 @@
+.container{
+    flex: 2;
+    position: sticky;
+    top: 100px;
+    max-width: 300px;
+    transition: all ease-in-out 0.5s;
+}
+
+.Container{
+    min-width: 230px;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    height: calc( 100vh - 100px);
+    overflow-y: scroll;
+    gap: 20px;
+    padding: 10px 0;
+    background-color: var(--bg);
+    transition: all ease-in-out 0.5s;
+}
+
+.wrapper::-webkit-scrollbar{
+    width: 0px;
+}
+.newFeed{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(252, 252, 252);
+    width: 95%;
+    margin: auto;
+    padding: 10px 0 10px 20px;
+    border-radius: 20px;
+    gap: 20px;
+    transition: all ease-in-out 0.5s;
+}
+
+
+
+.heading{
+    font-weight: bold;
+    color: gray;
+}
+
+.feedList{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.feedItem{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.secondaryicon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+}
+
+.firsticon{
+    background-color: #1e74fd; 
+    background-image:linear-gradient(to right,#0575e6,#021b79);
+}
+
+.secondicon{
+    background-color: #1e74fd; 
+    background-image:linear-gradient(to right,#e44d26,#f16529);
+}
+
+.thirdicon{
+    background-color: #1e74fd; 
+    background-image:linear-gradient(to right,#f2994a,#f2c94c)
+}
+
+.fourthicon{
+    background-color: #1e74fd; 
+    background-image:linear-gradient(to right,#ee0979,#ff6a00);
+}
+
+.fifthicon{
+    background-color: #1e74fd; 
+    background-image:linear-gradient(135deg,#05f,#09f);
+}
+
+
+.title{
+    color: gray;
+    font-weight: 600;
+}
+.title:hover{
+    color: #1e74fd;
+    transition: all ease 0.3s;
+}
+
+@media screen and (max-width:1230px){
+    .container{  
+      max-width: 230px;
+    }
+}
+@media screen and (max-width:900px){
+   .wrapper{
+    padding-bottom: 70px;
+   }
+}
+
+@media screen and (max-width:600px){
+   .container{
+      position: absolute;
+      z-index: 10;
+      top: 50px;
+      left: -500px;
+    }
+
+   .wrapper{
+    padding-bottom: 20px;
+   }
+
+}

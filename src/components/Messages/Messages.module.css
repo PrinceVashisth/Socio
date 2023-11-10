@@ -1,0 +1,104 @@
+.Container{
+   position: absolute;
+   transition: all ease 0.5s;
+   width: 300px;
+   height: calc(100vh - 100px);
+   background-color: gray;
+   display: flex;
+   justify-content: center;
+   overflow-y: scroll;
+   bottom: 0;
+}
+
+.Container::-webkit-scrollbar{
+    width: 0px;
+}
+
+.Wrapper{
+    width: 260px;
+    height: fit-content;
+    background-color: #fff;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 10px 0;
+}
+
+.Contact{
+    padding: 10px;
+
+}
+.ContactHeader{
+  color: rgb(173, 181, 189);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.ContactList{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.ContactListItem{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.image{
+    width: 40px;
+    height: 40px;
+    position: relative;
+
+}
+
+.name{
+    font-weight: 600;
+    color: rgb(108, 117, 125);
+}
+
+.state{
+    margin-left: auto;
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.unread{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: blue;
+    width: 20px;
+    height: 25px;
+    color: #fff;
+    border-radius: 10px;
+    padding: 2px 3px;
+}
+
+.active{
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: green;
+}
+
+.justActive{
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: orangered;
+}
+
+@media screen and (max-width:600px) {
+    .Container{
+        height: calc(100vh - 50px);
+        padding: 0px 20px;
+    }
+}

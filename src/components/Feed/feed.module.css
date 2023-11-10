@@ -1,0 +1,204 @@
+.container{
+    flex: 5.5;
+    max-width: 900px;
+    background-color: var(--bg);
+    height: calc(100vh - 100px);
+    overflow-y: scroll;
+}
+
+.container::-webkit-scrollbar{
+    width: 0px;
+}
+.wrapper{
+    max-width: 90%;
+    margin-left: auto;
+}
+.statusCards{
+    display: flex;
+    gap: 10px;
+    overflow-y: hidden;
+    margin-top: 30px;
+}
+
+.statusCards::-webkit-scrollbar{
+    width: 0px;
+}
+
+.statusCard{
+    min-width: 130px;
+    height: 200px;
+    border-radius: 10px;
+    background-color: rgb(226, 233, 233);
+    position: relative;
+}
+
+.statusContent{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    bottom: 20px;
+    gap: 5px;
+}
+
+.profileImg{
+    border-radius: 50%;
+    border: 2px solid gray;
+}
+
+/* createPost */
+
+.createPost{
+    width: 100%;
+    border-radius: 20px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 20px;
+}
+
+.createPostHeader{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.writeIcon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #ece6e6;
+    border-radius: 50%;
+}
+
+.postTitle{
+    color: rgb(145, 140, 140);
+    font-weight: bold;
+}
+
+.createPostContent{
+   display: flex;
+   gap: 20px;
+   border: 1px solid lightgray;
+   border-radius: 20px; 
+   padding: 5px;
+   height: 130px;
+}
+
+.createProfileImg{
+   border-radius: 50%;
+}
+
+.createPostText{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+}
+
+.postMedia{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sharingIcons{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.sharingIcon{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.otherShare{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #e4e1e1;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width:1230px) {
+    .container{
+        flex: 5.5;
+        max-width: 100%;
+        background-color: var(--bg);
+        height: calc(100vh - 100px);
+        overflow-y: scroll;
+    }
+    
+    .container::-webkit-scrollbar{
+        width: 0px;
+    }
+    .wrapper{
+        max-width: 800px;
+        /* max-width: 100%; */
+        margin: auto;
+    }
+}
+
+@media screen and (max-width:1030px) {
+    .container{
+        flex: 6;
+        max-width: 1000px;
+        background-color: var(--bg);
+        height: calc(100vh - 100px);
+        overflow-y: scroll;
+        padding: 0px 20px;
+    }
+    .wrapper{
+        margin: auto;
+        /* padding-bottom: 50px; */
+    }
+}
+
+@media screen and (max-width:900px) {
+    .wrapper{
+        padding-bottom: 50px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .container{
+        height: calc(100vh - 50px);
+        padding: 0px 5px;
+    }
+    .sharingIcons{
+        gap: 50px;
+    }
+    .sharingIcon span{
+        display: none;
+    }
+    .otherShare{
+            width: 30px;
+            height: 30px;
+        }  
+
+        .createPost{
+            width: 100%;
+            border-radius: 5px;
+            gap: 5px;
+            padding: 10px 10px;
+        }
+        
+        .createPostContent{
+           border-radius: 10px; 
+           padding: 5px;
+           height: 100px;
+        }
+            
+    .createProfileImg{
+       display: none;
+     }    
+}

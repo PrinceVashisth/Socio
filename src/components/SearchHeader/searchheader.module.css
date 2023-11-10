@@ -1,0 +1,102 @@
+
+.Header{
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    margin: 20px 0;
+    padding: 20px 10px;
+}
+
+.HeaderTitle{
+    font-weight: 700;
+    font-size: 30px;
+    text-transform: capitalize;
+}
+
+.SearchBar{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.Search{
+    display: flex;
+    align-items: center;
+    background-color: #d8d5d5;
+    width: 250px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.input{
+    width: 80%;
+    outline: none;
+    border: none;
+    margin-left: 10px;
+    font-size: 15px;
+    background-color: inherit;
+}
+
+.filterIcon{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: var(--bg);
+    padding: 8px;
+    color: #fff;
+}
+
+@media screen and (max-width:1230px){
+    .Header{
+    width: 90%;
+}
+}
+
+@media screen and (max-width:800px){
+    .Header{
+        width: 98%;
+    }
+    .HeaderTitle{
+        font-weight: 600;
+        font-size: 20px;
+        text-transform:capitalize;
+    }
+
+}
+
+@media screen and (max-width:550px){
+.Header{
+    display: flex;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+}
+.HeaderTitle{
+    display: none;
+}
+
+.SearchBar{
+    width: 100%;
+    gap: 10px;
+}
+
+.Search{
+    width:90%;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.input{
+    width: 80%;
+    outline: none;
+    border: none;
+    margin-left: 10px;
+    font-size: 15px;
+    background-color: inherit;
+}
+}

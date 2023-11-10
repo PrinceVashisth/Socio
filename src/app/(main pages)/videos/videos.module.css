@@ -1,0 +1,28 @@
+.container{
+    display: flex;
+}
+
+.RightBar{
+    flex: 9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--bg);
+}
+
+@media screen and (max-width:1200px){
+.RightBar{
+    flex:none;
+    padding-right:10px;
+    max-width: calc(100vw - 230px);
+}
+}
+
+@media screen and (max-width:600px){
+    .RightBar{
+        max-width: 100vw;
+        padding:0 10px;
+        margin-bottom: 20px;
+        height: calc(100vh - 50px);
+}
+}
