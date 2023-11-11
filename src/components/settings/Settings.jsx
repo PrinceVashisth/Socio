@@ -1,8 +1,11 @@
+import { useContext } from 'react';
 import styles from './settings.module.css'
-
+import { theme } from '../../../theme/ThemeProvider';
 export default function Settings() {
+  
+   const {settings} = useContext(theme);
   return (
-    <div className={styles.settingsOption}>
+    <div className={styles.settingsOption} style={settings?{display:'none'}:{display:'flex'}}>
     <div className={styles.Header}>settings</div>
     <div className={styles.ColorPelette}>
      <span className={styles.PeletteHeading}>choose color theme</span>

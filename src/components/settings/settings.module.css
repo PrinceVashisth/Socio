@@ -12,7 +12,8 @@
     gap: 15px;
     border-radius: 10px;
     box-shadow: 1px 1px 5px 2px lightgrey;
-    display: none;
+    /* display: none; */
+    transition: all ease-in-out 0.5s;
 }
 
 .Header{

@@ -1,5 +1,8 @@
+"use client"
 import Image from "next/image";
 import styles from "./notification.module.css";
+import { useContext } from "react";
+import { theme } from "../../../theme/ThemeProvider";
 
 export default function Notification() {
    const Card = ()=>{
@@ -21,8 +24,9 @@ export default function Notification() {
     )
    }
 
+   const {notification} = useContext(theme);
   return (
-    <div className={styles.notification}>
+    <div className={styles.notification} style={notification?{display:'none'}:{display:'block'}}>
       <div className={styles.header}>notification</div>
       <div className={styles.Cards}>
         <Card/>

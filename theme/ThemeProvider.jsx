@@ -17,6 +17,8 @@ export const ThemeContext = ({children})=>{
   });
    const [mess,setmess] = useState(false);
    const [chat,setChat] = useState(false);
+   const [notification,setNotification] = useState(false);
+   const [settings,setSettings] = useState(false);
    const [SideBar,setSideBar] = useState(false);
    const toggle = ()=>{
     setmode(mode==='light'?"dark":"light");
@@ -30,6 +32,14 @@ export const ThemeContext = ({children})=>{
     setSideBar(!SideBar);
    }  
 
+   const NotiToggle = ()=>{
+    setNotification(!notification);
+   }
+
+   const SettingsToggle = ()=>{
+    setSettings(!settings);
+   }  
+
    const MessageToggle = ()=>{
     setmess(!mess);
    }  
@@ -38,7 +48,7 @@ export const ThemeContext = ({children})=>{
     localStorage.setItem('theme',JSON.stringify(mode));
    },[mode]); 
    return(
-        <theme.Provider value={{mode,toggle,mess,chat,ChatToggle,MessageToggle,SideBar,SideToggle}}>
+        <theme.Provider value={{mode,toggle,mess,chat,ChatToggle,MessageToggle,SideBar,SideToggle,notification,NotiToggle,SettingsToggle,settings}}>
         <div className={`theme ${mode}`}>
         {children}
         </div>

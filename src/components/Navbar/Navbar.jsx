@@ -21,7 +21,7 @@ import Notification from "../notification/Notification";
 
 export default function Navbar() {
   const [focus, setFocus] = useState({ name: "Home" });
-  const { toggle, ChatToggle,SideToggle } = useContext(theme);
+  const { toggle, ChatToggle,SideToggle,NotiToggle,SettingsToggle } = useContext(theme);
   return (
     <div className={styles.wrapper}>
       <div className={styles.logo}>
@@ -134,7 +134,11 @@ export default function Navbar() {
       <span className={styles.line}></span>
    </div>
       <div className={styles.otherlinks}>
-        <div className={styles.otherLink}>
+        <div className={styles.otherLink} 
+        onClick={() => {
+          NotiToggle();
+        }}
+        >
           <NotificationsNoneOutlined sx={{ color: "#05f",fontSize:{xs:"25px",sm:"30px"}  }} />
           <span className={styles.dot}></span>
         </div>
@@ -152,6 +156,9 @@ export default function Navbar() {
           <SettingsOutlined
             sx={{  color: "#05f",fontSize:{xs:"25px",sm:"30px"}  }}
             className={styles.setting}
+            onClick={() => {
+              SettingsToggle();
+            }}
           />
         </div>
         <div
