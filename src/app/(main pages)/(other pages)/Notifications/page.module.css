@@ -1,0 +1,7 @@
+.container{
+    display: flex;
+    background-color: var(--bg);
+}
+.Wrapper{
+    flex: 10;
+}

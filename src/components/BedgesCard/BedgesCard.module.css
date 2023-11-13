@@ -1,0 +1,84 @@
+.BedgesCards{
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+}
+
+.BedgesCard{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px 0;
+    border-radius: 10px;
+    box-shadow: inset;
+}
+
+.ProfileImg{
+    position: relative;
+  width: 80px;
+  height: 80px;
+}
+.ProfileImg img{
+    border-radius: 50%;
+}
+
+.Cradentials{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.name{
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.email{
+   color: gray;
+   font-size: 14px;
+}
+
+.Counts{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.CountItem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Numbers{
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.itemTitle{
+    font-size: 13px;
+    color: gray;
+}
+
+.Bedges{
+    display: flex;
+    gap: 15px;
+}
+
+.Bedge{
+    position: relative;
+    width: 40px;
+    height: 40px;
+}
+
+.Btn{
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: blue;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 13px;
+}

@@ -1,0 +1,94 @@
+.Container{
+    margin: 10px auto;
+    width: 80%;
+    min-width: 900px;
+    height: calc(100vh - 120px);
+    overflow-y: scroll;
+    background-color: #fff;
+}
+.Container::-webkit-scrollbar{
+    width: 0px;
+}
+.Header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10px;
+}
+.leftSide{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.Heading{
+    font-weight: 900;
+    font-size: 25px;
+    text-transform: capitalize;
+}
+.NotificationCount{
+  background-color: orange;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.rightSide{
+    display: flex;
+    gap: 10px;
+}
+.Icon{
+  background-color: #f5f5f5;
+  color: #adb5bd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 7px;
+  border-radius: 5px;
+  font-size: 10px;
+}
+
+.NotificationList{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+.focus{
+    background-color: #e8f1fa !important;
+}
+.NotificationListItem{
+    display: flex;
+    width: 100%;
+    border-radius: 5px;
+    padding: 20px;
+    gap: 20px;
+    align-items: center;
+}
+
+.Left{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.ProfileIcon{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: absolute;
+   bottom: -5px;
+   right: -5px;
+   z-index: 999;
+   background-color: blue;
+   padding: 3px;
+   border-radius: 50%;
+   color: white;
+}
+
+.top{
+    font-size: 14px;
+}
+.time{
+    color:  #adb5bd;
+    font-weight: 700;
+}

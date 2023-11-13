@@ -26,7 +26,7 @@ export default function Notification() {
 
    const {notification} = useContext(theme);
   return (
-    <div className={styles.notification} style={notification?{display:'none'}:{display:'block'}}>
+    <div className={styles.notification} style={notification?{display:'block'}:{display:'none'}}>
       <div className={styles.header}>notification</div>
       <div className={styles.Cards}>
         <Card/>

@@ -1,0 +1,89 @@
+.container{
+    flex: 10;
+    margin: 10px 0px 0px 10px;
+    background-color: #fff;
+    padding: 20px;
+    height: calc(100vh - 100px);
+    overflow-y: scroll;
+}
+
+.container::-webkit-scrollbar{
+    width: 0;
+}
+
+.Left,.Middle,.Right{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.Left{
+    flex: 3;
+}
+.Middle{
+    flex: 6;
+}
+.Subject{
+    font-weight: 600;
+}
+.Content{
+    font-size: 14px;
+    color: #adb5bd;
+}
+
+.List{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 10px;
+    gap: 5px;
+}
+
+.ListItem{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.Right{
+    flex: 3;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+    color: #adb5bd;
+    gap: 30px;
+    font-size: 13px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.ListItem:hover{
+    background-color: #3d4d5e !important;
+    color: #fff !important;
+    transition: all ease-in-out 0.5s;
+}
+
+
+.dot{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: green;
+    margin-left: 20px;
+}
+.profileImg{
+    position: relative;
+    width: 30px;
+    height: 30px;
+}
+.profileImg img{
+    border-radius: 50%;
+}
+
+.profileName{
+    font-weight: 600;
+    font-size: 15px;
+}
