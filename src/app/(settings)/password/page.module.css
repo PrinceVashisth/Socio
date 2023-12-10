@@ -1,0 +1,43 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.Input{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+}
+
+.Input span{
+   font-size: 14px;
+   color: gray;
+   font-weight: 600;
+}
+
+.input{
+    border:1px solid gray;
+    border-radius: 5px;
+    height: 40px;
+    width: 90%;
+    outline: none;
+    padding-left: 10px;
+}
+
+.form button{
+    width: max-content;
+    border: none;
+    width: 180px;
+    height: 50px;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    margin-left: 10px;
+    background-color: blue;
+}

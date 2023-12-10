@@ -1,0 +1,89 @@
+.container{
+    display: flex;
+    background-color: var(--bg);
+}
+
+.Wrapper{
+    width: 800px;
+    margin: 20px auto 0px auto;
+    height: calc(100vh - 100px);
+    overflow-y: scroll;
+}
+
+.Wrapper::-webkit-scrollbar{
+    width: 0px;
+}
+
+.HeaderBg{
+    background-image: url('../../../../public/images/help-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    height: 400px;
+    background-color: rgba(0,85,255,0.8);
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    padding: 0 100px;
+}
+
+.Header h2{
+  font-size: 55px;
+}
+
+.HeaderBtn{
+  width: 80%;
+  display: flex;
+  align-items: center;
+  background-color: #fdfdfd;
+  padding: 5px;
+  border-radius: 5px;
+  justify-content: space-between;
+}
+
+.input{
+   width: 60%;
+   height: 80%;
+   border: none;
+   outline: none;
+   font-size: 18px;
+   color: gray;
+}
+
+.HeaderBtn button{
+    border: none;
+    border-radius: 5px;
+    width: 150px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+    color: white;
+}
+
+.List{
+    margin: 50px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.ListItem{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    align-items: center;
+    color: rgb(75, 74, 74);
+    font-size: 16px;
+}

@@ -1,0 +1,125 @@
+.container{
+    display: flex;
+    background-color: var(--bg);
+}
+.Wrapper{
+    flex: 10.5;
+    display: flex;
+}
+.Hotels{
+    flex: 3;
+    height: calc(100vh - 100px);
+    overflow-y: scroll;
+    padding: 0px 10px 10px 0px;
+    min-width: 600px;
+}
+.Hotels::-webkit-scrollbar{
+   width: 0;
+}
+
+.Maps{
+    flex: 3;
+}
+
+.Cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+}
+
+.Card{
+   border-radius: 10px;
+   padding: 10px;
+   background-color: #fff;
+   display: flex;
+   flex-direction: column;
+   gap: 5px;
+}
+
+.CoverImg{
+    position: relative;
+    width: 100%;
+    height: 200px;
+}
+.CoverImg img{
+    transition: all ease 0.3s;
+    border-radius: 10px;
+}
+
+.featured{
+    color: white;
+    background-color: blue;
+    padding: 10px 15px;
+    border-radius: 10px;
+    width: fit-content;
+    font-weight: 500;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.address{
+    color: gray;
+    font-size: 12px;
+}
+.stars{
+    display: flex;
+    gap: 5px;
+}
+
+.star{
+    position: relative;
+    width: 15px;
+    height: 15px;
+}
+
+.Icons{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: gray;
+}
+
+.Icon{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: gray;
+    color: lightgray;
+    padding: 10px;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Back{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: blue;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.price{
+    color: #10d876;
+    display: flex;
+    align-items: flex-end;
+    gap: 5px;
+}
+#month{
+    color: gray;
+    padding-bottom: 5px;
+}
+

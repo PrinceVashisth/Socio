@@ -1,13 +1,18 @@
 "use client";
+import Message from "@/components/Message/Message";
+import Messages from "@/components/Messages/Messages";
+import Navbar from "@/components/Navbar/Navbar";
+import { usePathname } from "next/navigation";
 import { createContext, use, useEffect, useState } from "react";
 
 export const theme = createContext();
 
 const getFromLocalStorage = () => {
-  if (typeof window !== "undefined") {
-    const value = JSON.parse(localStorage.getItem("theme"));
-    return value || "light";
+  if (typeof window !== undefined) {
+    // const value = JSON.parse(localStorage.getItem("theme"));
+    return "light";
   }
+  return "light";
 };
 
 export const ThemeContext = ({ children }) => {
@@ -56,6 +61,9 @@ export const ThemeContext = ({ children }) => {
   useEffect(() => {
     localStorage.setItem("theme", JSON.stringify(mode));
   }, [mode]);
+
+  const url = usePathname();
+
   return (
     <theme.Provider
       value={{
@@ -77,7 +85,15 @@ export const ThemeContext = ({ children }) => {
         Min,
       }}
     >
-      <div className={`theme ${mode}`}>{children}</div>
+      <div
+        className={`theme ${mode}`}
+        style={{ position: "relative", width: "100vw", overflow: "hidden" }}
+      >
+      {url === "/login" || url === "/forget" || url === "/register" ? null : <Navbar />}
+      { children }
+      {url === "/login" || url === "/forget" || url === "/register" ? null : <Messages />}
+      {url === "/login" || url === "/forget" || url === "/register" ? null : <Message />}
+      </div>
     </theme.Provider>
   );
 };

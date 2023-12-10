@@ -1,0 +1,83 @@
+.container{
+    display: flex;
+}
+
+.Wrapper{
+    flex: 10;
+    background-color: var(--bg);
+    height: calc(100vh - 100px);
+    overflow-y: scroll;
+}
+.Wrapper::-webkit-scrollbar{
+    width: 0px;
+}
+
+.ListContainer{
+    background-color: white;
+    width: 90%;
+    max-width: 800px;
+    margin: 10px auto;
+    padding: 20px 60px 10px 60px;
+    border-radius: 10px;
+}
+
+.Header{
+    font-weight: 900;
+    font-size: 35px;
+    text-transform: capitalize;
+    margin: 30px 0;
+}
+
+.ListItem{
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    align-items: center;
+}
+
+.List{
+    margin: 20px 0;
+}
+.subHeading{
+    color: gray;
+    text-transform: capitalize;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.Icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text{
+    font-weight: 700;
+    text-transform: capitalize;
+    color: rgb(23, 22, 22);
+}
+
+@media screen and (max-width:600px){
+    .Wrapper{
+    flex: 10;
+    background-color: var(--bg);
+    height: calc(100vh - 50px);
+    overflow-y: scroll;
+    padding-bottom: 20px;
+}
+}
+
+@media screen and (max-width:450px){
+.ListContainer{
+    background-color: white;
+    width: 100%;
+    max-width: 800px;
+    margin: 0px;
+    padding: 20px 60px 10px 60px;
+    border-radius: 0px;
+}
+
+}
